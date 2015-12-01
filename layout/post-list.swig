@@ -13,7 +13,7 @@
   <li>
     <h1><a href="{{ url_for( post.path) }}">{{ post.title }}</a></h1>
     <h2>{{ date( post.date, 'YYYY-M-D' ) }}</h2>
-    <hr>
+    {% if post.excerpt %}<hr>{% endif %}
     <div class="post markdown">{{ post.excerpt }}</div>
   </li>
   {% endfor %}

@@ -10,6 +10,7 @@
     $mode
       .children('[mode='+mode+']').addClass('active')
       .siblings().removeClass('active')
+    return false
   })
 
 }())
