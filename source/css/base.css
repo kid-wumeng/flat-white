@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans CJK SC";
+  font-weight: normal;
+}
+body {
+  background-color: #eaeaea;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: #000;
+}
+hr {
+  border: none;
+  border-bottom: 1px solid #ededed;
+}
+
+
+.wrap {
+  overflow: hidden;
+}
+.sidebar {
+  float: left;
+}
+.main {
+  margin-left: 276px;
+}
+.sidebar,
+.main {
+  margin-bottom: -100000px;
+  padding-bottom: 100000px;
+}

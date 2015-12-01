@@ -1,0 +1,106 @@
+.highlight {
+  display: block;
+  overflow-x: auto;
+  padding: 12px 9px;
+  background: #ededed;
+  -webkit-text-size-adjust: none;
+}
+
+.highlight * {
+  color: rgb(77,77,76);
+}
+
+.comment {
+  color: rgba(142,144,140);
+}
+
+.diff .header,
+.doctype,
+.pi,
+.lisp .string {
+  color: #aaa;
+  font-weight: normal;
+}
+
+.keyword,
+.winutils,
+.method,
+.addition,
+.css .tag,
+.request,
+.status,
+.nginx .title {
+  color: rgb(137,89,168);
+}
+
+.number,
+.command,
+.tag .value,
+.rule .value,
+.doctag,
+.tex .formula,
+.regexp,
+.hexcolor,
+.link_url {
+}
+
+.string {
+  color: rgb(62,153,159);
+}
+
+.title,
+.localvars,
+.chunk,
+.decorator,
+.built_in,
+.identifier,
+.vhdl .literal,
+.id,
+.css .function,
+.name {
+}
+
+.attribute,
+.variable,
+.lisp .body,
+.smalltalk .number,
+.constant,
+.class .title,
+.parent,
+.type,
+.link_reference {
+}
+
+.preprocessor,
+.preprocessor .keyword,
+.pragma,
+.shebang,
+.symbol,
+.symbol .string,
+.diff .change,
+.special,
+.attr_selector,
+.subst,
+.cdata,
+.css .pseudo,
+.header {
+}
+
+.deletion,
+.important {
+}
+
+.link_label {
+}
+
+.tex .formula {
+}
+
+
+
+.built_in {
+  color: rgb(245,135,31);
+}
+.title {
+  color: #2196F3;
+}

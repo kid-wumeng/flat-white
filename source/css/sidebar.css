@@ -1,0 +1,75 @@
+.sidebar {
+  width: 276px;
+  background-color: #fafafa;
+}
+
+.sidebar .face {
+  height: 146px;
+  background-color: #3C4349;
+  position: relative;
+}
+.sidebar .face img {
+  width: 104px;
+  height: 104px;
+  position: absolute;
+  left: 86px;
+  bottom: -52px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+}
+
+.sidebar .author,
+.sidebar .desc {
+  font-size: 14px;
+  color: rgb(85,85,85);
+  text-align: center;
+}
+.sidebar .author {
+  margin-top: 80px;
+}
+.sidebar .desc {
+  margin-top: 12px;
+}
+
+.sidebar .pages,
+.sidebar .categories,
+.sidebar .options,
+.sidebar .sns {
+  width: 164px;
+  margin: 16px auto;
+  border-top: 1px solid #ededed;
+}
+.sidebar .pages {
+  border-top: none;
+}
+.sidebar .pages a,
+.sidebar .categories a,
+.sidebar .options li {
+  display: block;
+  font-size: 14px;
+  color: rgb(85,85,85);
+  margin-top: 12px;
+}
+.sidebar .options li a {
+  cursor: pointer;
+  color: rgb(85,85,85);
+}
+
+.sidebar .options li .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.sidebar .sns {
+  overflow: hidden;
+}
+.sidebar .sns a {
+  float: left;
+  width: 28px;
+  height: 28px;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+.sidebar .sns a:nth-child(4n) {
+  margin-right: 0;
+}

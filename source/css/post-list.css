@@ -1,0 +1,46 @@
+.post-list {
+  margin: 8px;
+}
+.post-list > li > h1 {
+  font-size: 20px;
+}
+.post-list > li > h1 > a {
+  color: #606060;
+}
+.post-list > li > h2 {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  text-indent: 1px;
+  color: #ccc;
+}
+
+
+.post-list[mode=summary] > li {
+  margin-bottom: 8px;
+  padding: 16px 18px;
+  background-color: #fafafa;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.post-list[mode=summary] > li > div {
+  margin-top: -12px;
+  width: 640px;
+}
+
+
+.post-list[mode=list] {
+  margin-bottom: 8px;
+  padding: 32px 36px;
+  background-color: #fafafa;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+.post-list[mode=list] > li > hr,
+.post-list[mode=list] > li > div {
+  display: none;
+}
+.post-list[mode=list] > li:last-child > h2 {
+  margin-bottom: 0;
+}
