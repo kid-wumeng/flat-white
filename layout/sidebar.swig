@@ -25,9 +25,9 @@
       <a mode="summary">SUMMARY</a> / <a mode="list">LIST</a>
     </li>
     {# sort #}
-    <li>
+    {# <li class="sort" default-sort="{{ config['post-list']['default-sort'] }}">
       <a href="">ASC</a> / <a href="">DESC</a>
-    </li>
+    </li> #}
   </ul>
   
   <div class="sns">

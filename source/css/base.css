@@ -4,7 +4,13 @@
   font-family: "Noto Sans CJK SC";
   font-weight: normal;
 }
+
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   background-color: #eaeaea;
 }
 li {
@@ -24,6 +30,7 @@ hr {
 
 
 .wrap {
+  min-height: 100%;
   overflow: hidden;
 }
 .sidebar {
