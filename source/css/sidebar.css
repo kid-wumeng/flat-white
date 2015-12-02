@@ -36,7 +36,8 @@
 .sidebar .options,
 .sidebar .sns {
   width: 164px;
-  margin: 16px auto;
+  margin: 0px auto;
+  padding: 16px;
   border-top: 1px solid #ededed;
 }
 .sidebar .pages {
@@ -49,6 +50,11 @@
   font-size: 14px;
   color: rgb(85,85,85);
   margin-top: 12px;
+}
+.sidebar .pages a:first-child,
+.sidebar .categories a:first-child,
+.sidebar .options li:first-child {
+  margin-top: 0;
 }
 .sidebar .options li a {
   cursor: pointer;
@@ -69,6 +75,11 @@
   height: 28px;
   margin-right: 16px;
   margin-top: 16px;
+}
+.sidebar .sns img {
+  display: block;
+  width: 28px;
+  height: 28px;
 }
 .sidebar .sns a:nth-child(4n) {
   margin-right: 0;
