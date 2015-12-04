@@ -61,6 +61,7 @@
   color: rgb(85,85,85);
 }
 
+.sidebar .categories .active,
 .sidebar .options li .active {
   font-weight: bold;
   text-decoration: underline;

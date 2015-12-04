@@ -13,9 +13,30 @@
   </div>
   
   <div class="categories">
-    <a href="{{ url_for() }}">All Categories</a>
+  
+    {# Index页，判断激活哪个 #}
+    {% if page.path === 'index.html' %}
+      {% set active = 'active' %}
+    {% endif %}
+    <a class="{{active}}" href="{{ url_for() }}">All Categories</a>
+    
     {% for category in site.categories %}
-      <a href="{{ url_for(category.path) }}">{{ category.name }}</a>
+      
+      {# Page页，判断激活哪个 #}
+      {% set active = '' %}
+      {% if page.category === category.name %}
+        {% set active = 'active' %}
+      {% endif %}
+      
+      {# Category页，判断激活哪个 #}
+      {% for page_category in page.categories %}
+        {% if page.path !== 'index.html' && page_category.name === category.name %}
+          {% set active = 'active' %}
+        {% endif %}
+      {% endfor %}
+    
+      <a class="{{ active }}" href="{{ url_for(category.path) }}">{{ category.name }}</a>
+      
     {% endfor %}
   </div>
 
