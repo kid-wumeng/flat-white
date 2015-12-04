@@ -8,14 +8,19 @@
   background-color: #3C4349;
   position: relative;
 }
-.sidebar .face img {
+.sidebar .face div {
   width: 104px;
   height: 104px;
   position: absolute;
   left: 86px;
   bottom: -52px;
+  outline: none;
   border-radius: 100%;
   border: 3px solid #fff;
+  background-color: #3C4349;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 104px;
 }
 
 .sidebar .author,

@@ -1,7 +1,7 @@
 <div class="sidebar">
   
   <div class="face">
-    <img src="{{ config.face }}">
+    <div img-src="{{ config.face }}"></div>
   </div>
 
   <h1 class="author">{{ config.author }}</h1>

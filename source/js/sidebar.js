@@ -1,4 +1,14 @@
 ;(function(){
+
+  
+  var $face = $('.face div')
+  var imgSrc = $face.attr('img-src')
+  var tempImg = new Image()
+  tempImg.src = imgSrc
+  tempImg.onload = function(){
+    $face.css('background-image', 'url('+imgSrc+')')
+  }
+
     
   var $mode = $('.sidebar .mode')
   var mode = $mode.attr('default-mode')
