@@ -8,8 +8,8 @@
   <p class="desc">{{ config.description }}</p>
   
   <div class="pages">
-    <a href="">ABOUT ME</a>
-    <a href="">LINKS</a>
+    <a href="{{ url_for('about-me') }}">ABOUT ME</a>
+    <a href="{{ url_for('link') }}">LINKS</a>
   </div>
   
   <div class="categories">

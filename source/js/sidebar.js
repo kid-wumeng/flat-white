@@ -1,6 +1,5 @@
 ;(function(){
 
-  
   var $face = $('.face div')
   var imgSrc = $face.attr('img-src')
   var tempImg = new Image()

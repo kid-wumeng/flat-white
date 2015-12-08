@@ -1,0 +1,18 @@
+.page {
+  margin: 8px;
+  padding: 16px 18px;
+  min-height: 100%;
+  background-color: #fafafa;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+.page > h1 {
+  font-size: 20px;
+  color: #606060;
+  margin-bottom: 12px;
+}
+
+.page .content {
+  width: 640px;
+}
