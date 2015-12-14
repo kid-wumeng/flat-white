@@ -27,7 +27,6 @@
   <script src="/js/jquery.min.js"></script>
   <script src="/js/post.js"></script>
   <script src="/js/markdown.js"></script>
-  <script src="/js/disqus.js"></script>
   <script src="//{{ config.disqus_shortname }}.disqus.com/embed.js"></script>
     
 </body>
