@@ -7,14 +7,25 @@
   <h1 class="author">{{ config.author }}</h1>
   <p class="desc">{{ config.description }}</p>
   
+  
+  {# about-me页，判断是否激活 #}
+  {% if page.path === 'about-me/index.html' %}
+    {% set about_me_active = 'active' %}
+  {% endif %}
+  
+  {# links页，判断是否激活 #}
+  {% if page.path === 'links/index.html' %}
+    {% set links_active = 'active' %}
+  {% endif %}
+  
   <div class="pages">
-    <a href="{{ url_for('about-me') }}">ABOUT ME</a>
-    <a href="{{ url_for('link') }}">LINKS</a>
+    <a class="{{about_me_active}}" href="{{ url_for('about-me') }}">ABOUT ME</a>
+    <a class="{{links_active}}" href="{{ url_for('links') }}">LINKS</a>
   </div>
   
   <div class="categories">
   
-    {# Index页，判断激活哪个 #}
+    {# index页，判断激活哪个 #}
     {% if page.path === 'index.html' %}
       {% set active = 'active' %}
     {% endif %}
@@ -22,13 +33,13 @@
     
     {% for category in site.categories %}
       
-      {# Page页，判断激活哪个 #}
+      {# post页，判断激活哪个 #}
       {% set active = '' %}
       {% if page.category === category.name %}
         {% set active = 'active' %}
       {% endif %}
       
-      {# Category页，判断激活哪个 #}
+      {# category页，判断激活哪个 #}
       {% for page_category in page.categories %}
         {% if page.path !== 'index.html' && page_category.name === category.name %}
           {% set active = 'active' %}
