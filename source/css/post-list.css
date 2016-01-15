@@ -1,15 +1,14 @@
 .post-list {
   margin: 8px;
 }
-.post-list > li > h1 {
-  font-size: 20px;
-}
 .post-list > li > h1 > a {
-  color: #606060;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ef4136;
 }
 .post-list > li > h2 {
-  margin-top: 8px;
-  margin-bottom: 12px;
+  margin-top: 2px;
+  margin-bottom: 15px;
   font-size: 12px;
   text-indent: 1px;
   color: #ccc;
@@ -18,7 +17,7 @@
 
 .post-list[mode=summary] > li {
   margin-bottom: 8px;
-  padding: 16px 18px;
+  padding: 2px 18px;
   background-color: #fafafa;
   border-radius: 2px;
   box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
@@ -32,10 +31,13 @@
 
 .post-list[mode=list] {
   margin-bottom: 8px;
-  padding: 32px 36px;
+  padding: 24px 32px;
   background-color: #fafafa;
   border-radius: 2px;
   box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+.post-list[mode=list] > li {
+  margin-top: -6px;
 }
 .post-list[mode=list] > li > hr,
 .post-list[mode=list] > li > div {
