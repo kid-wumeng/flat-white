@@ -43,6 +43,12 @@
 }
 
 
+.markdown > p > img {
+  max-width: 100%;
+  margin-top: 8px;
+}
+
+
 .markdown ul,
 .markdown ol {
   padding-left: 22px;
