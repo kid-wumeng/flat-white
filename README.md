@@ -1,6 +1,9 @@
 # flat-white
 A Hexo Theme
 
+![index](http://image17-c.poco.cn/mypoco/myphoto/20160116/16/17879226920160116162938061.png)
+![post](http://image17-c.poco.cn/mypoco/myphoto/20160116/16/17879226920160116162849071.png)
+
 
 # Usage
 ## Install
