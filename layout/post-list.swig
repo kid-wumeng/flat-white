@@ -1,4 +1,4 @@
-{% if config.posts.sort === 'asc' %}
+{% if config['post-sort'] === 'asc' %}
   {% set orderBy = 'date' %}
 {% else %}
   {% set orderBy = '-date' %}
@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="/css/markdown.css">
 <link rel="stylesheet" href="/css/highlight/print-code.css">
 
-<ul class="post-list" mode="{{ config['post-list']['default-mode'] }}">
+<ul class="post-list" mode="{{ config['post-mode'] }}">
   {% for post in page.posts.sort(orderBy) %}
   <li>
     <h1><a href="{{ url_for( post.path) }}">{{ post.title }}</a></h1>

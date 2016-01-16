@@ -54,11 +54,11 @@
   {% if !page.title %}
     <ul class="options">
       {# mode #}
-        <li class="mode" default-mode="{{ config['post-list']['default-mode'] }}">
+        <li class="mode" default-mode="{{ config['post-mode'] }}">
           <a mode="summary">SUMMARY</a> / <a mode="list">LIST</a>
         </li>
       {# sort #}
-      {# <li class="sort" default-sort="{{ config['post-list']['default-sort'] }}">
+      {# <li class="sort" default-sort="{{ config['post-sort'] }}">
         <a href="">ASC</a> / <a href="">DESC</a>
       </li> #}
     </ul>
